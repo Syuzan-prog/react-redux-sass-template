@@ -1,0 +1,18 @@
+@import '~styles/root';
+
+.app-count {
+    display: flex;
+    border: 2px solid $primary-color;
+    border-width: 2px;
+    border-radius: 4px;
+    &__btn {
+        border: none;
+        border-radius: none;
+        color: $primary-color;
+    }
+    &__count {
+        @extend %flex-centered;
+        padding: 8px 36px;
+        color: white;
+    }
+}

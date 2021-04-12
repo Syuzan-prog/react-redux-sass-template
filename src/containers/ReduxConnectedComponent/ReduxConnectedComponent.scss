@@ -1,0 +1,25 @@
+@import "~styles/root";
+
+.app-sample-component {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    @extend %flex-centered;
+    background-color: #222;
+    @include media(until-tablet) {
+        background-color: #316b6f;
+    }
+    &__title {
+        margin-bottom: 42px;
+        color: white;
+    }
+    &__link {
+        text-decoration: none;
+        color: lightskyblue;
+        font-size: 20px;
+        margin-top: 120px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

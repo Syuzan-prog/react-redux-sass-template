@@ -1,0 +1,39 @@
+@import '~styles/root';
+
+.app-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url("~assets/react.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include media(until-mobile) {
+        background: #316b6f;
+    }
+    &__title {
+        margin-top: 64px;
+        color: white;
+    }
+    &__link {
+        font-size: 22px;
+        margin-bottom: 64px;
+        color: white;
+        text-decoration: none;
+        color: lightskyblue;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__copyright {
+        position: fixed;
+        bottom: 12px;
+        right: 12px;
+        font-size: 10px;
+        font-style: italic;
+        color: white;
+    }
+}

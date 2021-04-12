@@ -1,0 +1,12 @@
+@import '~styles/root';
+
+.app-button {
+    @extend %flex-centered;
+    @extend %button-defaults;
+    &--primary {
+        border: 2px solid $primary-color;
+    }
+    &--secondary {
+        border: 2px solid $secondary-color;
+    }
+}
