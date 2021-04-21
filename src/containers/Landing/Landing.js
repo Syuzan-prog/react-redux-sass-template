@@ -2,7 +2,7 @@ import Navigation from 'containers/Navigation/Navigation';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import './Landing.scss';
+import './Landing.scss';
 
 const Landing = () => {
     return (
